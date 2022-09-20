@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <lj-raw><!--HEADER-->
+<div style="width:510px;height:200px;margin:0 auto;background:#ddd url(HEADER_PIC)center -200px;background-size:cover;border-radius:10px 10px 0 0;display:flex;align-items:flex-end;justify-content:center;text-align:center;font-family:georgia;">
+
+	<div style="margin:0 0 20px 0;background:#fff;padding:15px 30px;line-height:1;text-transform:uppercase;">
+		<div style="font-size:20px;letter-spacing:1px;color:#000;">TITLE</div>
+		<div style="font-size:7px;letter-spacing:2px;color:#111;">SUBTITLE</div>
+	</div>
+
+</div>
+
+
+<!--CONTENT CONTAINER-->
+<div style="height:500px;overflow:hidden;font-family:calibri,sans-serif;font-size:12px;color:#222;text-align:justify;margin:0 0 7px 0;">
+
+
+	<!--PAGE CONTAINER-->
+	<a name="1"></a>
+	<div style="height:100%;overflow:hidden;display:flex;align-items:center;justify-content:center;line-height:1.6;">
+
+		<!--BACK ARROW-->
+		<a href="#5"><img src="https://i.imgur.com/Bh3m23o.png" style="margin:0 0 200px 0;"></a>
+
+		<!--PAGE-->
+		<div style="height:100%;width:510px;margin:0 20px;overflow:auto;background:#fff;border:1px solid rgba(0,0,0,0.15);border-top:0;padding:30px;box-sizing:border-box;">
+
+			<!--PAGE HEADER-->
+			<div style="font-family:georgia;font-size:8px;letter-spacing:4px;color:#000;text-align:center;margin:0 0 20px 0;">• FIRST IMPRESSIONS •</div>
+
+
+			<!--ABOUT COLUMNS-->
+			<div style="display:flex;justify-content:space-between;margin:0 0 20px 0;">
+
+				<!--ABOUT PIC-->
+				<div style="width:calc(50% - 10px);background:rgba(0,0,0,0.05) url(ABOUT_PIC)center;background-size:cover;border:10px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,0.15);box-sizing:border-box;"></div>
+
+
+				<!--ABOUT STATS-->
+				<div style="width:calc(50% - 10px);">
+
+					INFO
+					<b style="display:block;text-align:right;font-size:8px;text-transform:uppercase;letter-spacing:2px;border-top:1px solid #ddd;">FIELD</b>
+					INFO
+					<b style="display:block;text-align:right;font-size:8px;text-transform:uppercase;letter-spacing:2px;border-top:1px solid #ddd;">FIELD</b>
+					INFO
+					<b style="display:block;text-align:right;font-size:8px;text-transform:uppercase;letter-spacing:2px;border-top:1px solid #ddd;">FIELD</b>
+					INFO
+					<b style="display:block;text-align:right;font-size:8px;text-transform:uppercase;letter-spacing:2px;border-top:1px solid #ddd;">FIELD</b>
+					INFO
+					<b style="display:block;text-align:right;font-size:8px;text-transform:uppercase;letter-spacing:2px;border-top:1px solid #ddd;">FIELD</b>
+					INFO
+					<b style="display:block;text-align:right;font-size:8px;text-transform:uppercase;letter-spacing:2px;border-top:1px solid #ddd;">FIELD</b>
+					INFO
+					<b style="display:block;text-align:right;font-size:8px;text-transform:uppercase;letter-spacing:2px;border-top:1px solid #ddd;">FIELD</b>
+
+				</div>
+
+			</div>
+
+
+			<b style="font-family:georgia;font-size:8px;letter-spacing:2px;color:#222;">VOICE</b>
+			<div style="padding:10px;border:1px solid rgba(0,0,0,0.15);">VOICE_INFO</div><br>
+
+
+			<b style="font-family:georgia;font-size:8px;letter-spacing:2px;color:#222;">STYLE</b>
+			<div style="padding:10px;border:1px solid rgba(0,0,0,0.15);">STYLE_INFO</div><br>
+
+
+			<b style="font-family:georgia;font-size:8px;letter-spacing:2px;color:#222;">ETC.</b>
+			<div style="padding:10px;border:1px solid rgba(0,0,0,0.15);">ETC_INFO</div>
+
+
+		</div>
+
+		<!--FORWARD ARROW-->
+		<a href="#2"><img src="https://i.imgur.com/XAJgCoR.png" style="margin:0 0 200px 0;"></a>
+
+	</div>
+
+
+	<!--PAGE CONTAINER-->
+	<a name="2"></a>
+	<div style="height:100%;overflow:hidden;display:flex;align-items:center;justify-content:center;line-height:1.6;">
+
+		<!--BACK ARROW-->
+		<a href="#1"><img src="https://i.imgur.com/Bh3m23o.png" style="margin:0 0 200px 0;"></a>
+
+		<!--PAGE-->
+		<div style="height:100%;width:510px;margin:0 20px;overflow:auto;background:#fff;border:1px solid rgba(0,0,0,0.15);border-top:0;padding:30px;box-sizing:border-box;">
+
+			<!--PAGE HEADER-->
+			<div style="font-family:georgia;font-size:8px;letter-spacing:4px;color:#000;text-align:center;margin:0 0 20px 0;">• ABILITIES & SKILLS •</div>
+
+
+			<b style="font-family:georgia;font-size:8px;letter-spacing:2px;color:#222;">ABILITY</b>
+			<div style="padding:10px;border:1px solid rgba(0,0,0,0.15);">ABILITY_INFO</div><br>
+
+
+			<b style="font-family:georgia;font-size:8px;letter-spacing:2px;color:#222;">ABILITY</b>
+			<div style="padding:10px;border:1px solid rgba(0,0,0,0.15);">ABILITY_INFO</div><br>
+
+
+			<b style="font-family:georgia;font-size:8px;letter-spacing:2px;color:#222;">ABILITY</b>
+			<div style="padding:10px;border:1px solid rgba(0,0,0,0.15);">ABILITY_INFO</div><br>
+
+
+		</div>
+
+		<!--FORWARD ARROW-->
+		<a href="#3"><img src="https://i.imgur.com/XAJgCoR.png" style="margin:0 0 200px 0;"></a>
+
+	</div>
+
+
+	<!--PAGE CONTAINER-->
+	<a name="3"></a>
+	<div style="height:100%;overflow:hidden;display:flex;align-items:center;justify-content:center;line-height:1.6;">
+
+		<!--BACK ARROW-->
+		<a href="#2"><img src="https://i.imgur.com/Bh3m23o.png" style="margin:0 0 200px 0;"></a>
+
+		<!--PAGE-->
+		<div style="height:100%;width:510px;margin:0 20px;overflow:auto;background:#fff;border:1px solid rgba(0,0,0,0.15);border-top:0;padding:30px;box-sizing:border-box;">
+
+			<!--PAGE HEADER-->
+			<div style="font-family:georgia;font-size:8px;letter-spacing:4px;color:#000;text-align:center;margin:0 0 20px 0;">• APPEARANCE •</div>
+
+			<img src="APPEARANCE_PIC" style="width:40%;padding:10px;border:1px solid rgba(0,0,0,0.15);margin:0 20px 0 0;float:left;">
+
+			APPEARANCE_INFO
+
+
+		</div>
+
+		<!--FORWARD ARROW-->
+		<a href="#4"><img src="https://i.imgur.com/XAJgCoR.png" style="margin:0 0 200px 0;"></a>
+
+	</div>
+
+
+	<!--PAGE CONTAINER-->
+	<a name="4"></a>
+	<div style="height:100%;overflow:hidden;display:flex;align-items:center;justify-content:center;line-height:1.6;">
+
+		<!--BACK ARROW-->
+		<a href="#3"><img src="https://i.imgur.com/Bh3m23o.png" style="margin:0 0 200px 0;"></a>
+
+		<!--PAGE-->
+		<div style="height:100%;width:510px;margin:0 20px;overflow:auto;background:#fff;border:1px solid rgba(0,0,0,0.15);border-top:0;padding:30px;box-sizing:border-box;">
+
+			<!--PAGE HEADER-->
+			<div style="font-family:georgia;font-size:8px;letter-spacing:4px;color:#000;text-align:center;margin:0 0 20px 0;">• PERSONALITY •</div>
+
+			<img src="PERSONALITY_PIC" style="width:40%;padding:10px;border:1px solid rgba(0,0,0,0.15);margin:0 0 0 20px;float:right;">
+
+			PERSONALITY_INFO
+
+
+		</div>
+
+		<!--FORWARD ARROW-->
+		<a href="#5"><img src="https://i.imgur.com/XAJgCoR.png" style="margin:0 0 200px 0;"></a>
+
+	</div>
+
+
+	<!--PAGE CONTAINER-->
+	<a name="5"></a>
+	<div style="height:100%;overflow:hidden;display:flex;align-items:center;justify-content:center;line-height:1.6;">
+
+		<!--BACK ARROW-->
+		<a href="#4"><img src="https://i.imgur.com/Bh3m23o.png" style="margin:0 0 200px 0;"></a>
+
+		<!--PAGE-->
+		<div style="height:100%;width:510px;margin:0 20px;overflow:auto;background:#fff;border:1px solid rgba(0,0,0,0.15);border-top:0;padding:30px;box-sizing:border-box;">
+
+			<!--PAGE HEADER-->
+			<div style="font-family:georgia;font-size:8px;letter-spacing:4px;color:#000;text-align:center;margin:0 0 20px 0;">• HISTORY •</div>
+
+			HISTORY_INFO
+
+
+		</div>
+
+		<!--FORWARD ARROW-->
+		<a href="#1"><img src="https://i.imgur.com/XAJgCoR.png" style="margin:0 0 200px 0;"></a>
+
+	</div>
+
+
+
+</div>
+
+<!--OOC INFO-->
+<center style="font-family:georgia;font-size:8px;letter-spacing:4px;color:#000;text-align:center;">• NAME | AGE | TIMEZONE | PB NAME | <a href="http://tessisamess.insanejournal.com/130969.html" style="text-decoration:none;color:#000;">CODE</a> •</center></lj-raw>
+  </body>
+</html>
