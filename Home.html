@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <style>body {background: #000000;}</style>
+  </head>
+  <body>
+    /*-- REFERENTIAL - TESSISAMESS - 2021 --*/
+/*-- GET THIS LAYOUT AT referential.insanejournal.com --*/
+/*-- Credit me in profile if removing my credit link from main block --*/
+/*-- 
+
+	Find more fun stuff at:
+	tessisamess.insanejournal.com
+	tesscodes.dreamwidth.org
+	patreon.com/tessisamess
+
+--*/
+
+
+/* REPLACEMENTS */
+
+:root{
+/* COLORS */
+	--text: #222;
+	--date-tags: #bbb;
+	--blockquote-bg: rgba(0,0,0,0.05);
+	--lightest: #fff;
+
+	--page-bg: #E4E8EC;
+	--content-bg: #000;
+	--borders: rgba(255,255,255,0.1);
+
+	--accent: #617C90;
+	--accent2: #689AC0;
+
+	--sidebar-bg: #000;
+	--header-bg: #000;
+	--char-border: #fff;
+
+	--char-overlay: rgba(255,255,255,0.7);
+	--char-name: #689AC0;
+	--char-sub: #222;
+	--char-link: #fff;
+
+/* FONTS */
+	--main-font: Lato,calibri,sans-serif;
+	--headings: Lato Bold;
+	--title-font: Poiret One;
+
+	--body-text: 13px;
+	--headings-style: uppercase;
+	--title-style: none;
+
+	--title-text: 60px;
+	--subtitle-text: 20px;
+	--nav-icons: 10px;
+	--links-list: 12px;
+
+	--splash-title: 113px;
+	--splash-nav: 10px;
+	--splash-links: 13px;
+
+	--filter-header: 30px;
+	--filter-titles: 12px;
+	--filter-text: 9px;
+
+	--character-titles: 18px;
+	--character-text: 9px;
+
+	--entry-titles: 19px;
+	--entry-info: 10px;
+
+/* DIMENSIONS */
+	--content-width: 625px;
+
+	--header-icon: 100px;
+
+	--margin: 30px;
+	--padding: 30px;
+	--entry-icon: 60px;
+
+	--icons-radius: 100%;
+	--nav-link-radius: 4px;
+
+/* DIRECTORY */
+
+	--side-width: 200px;
+	--filter-icon: 100px;
+	--header-height: 200px;
+	--filter-height: 40px;
+
+	--characters-inset: 5vw;
+	--character-width: 250px;
+	--character-height: 300px;
+
+/* IMAGES */
+	--private: url(https://i.imgur.com/dJgLxi8.png)center left no-repeat!important;
+	--locked: url(https://i.imgur.com/tIooCJT.png)center left no-repeat!important;
+	--customs: url(https://i.imgur.com/LcxM0s0.png)center left no-repeat!important;
+}
+
+
+/* FONTS */
+
+@font-face{font-family:'Lato';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wXg.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+
+@font-face{font-family:'Lato Bold';font-style:normal;font-weight:900;src:url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh50XSwiPGQ.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+
+@font-face{font-family:'Poiret One';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/poiretone/v9/UqyVK80NJXN4zfRgbdfbo55cVw.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+
+@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/materialicons/v48/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');}
+
+
+/* GENERAL */
+
+::selection{background:var(--accent);color:var(--lightest);}
+::-moz-selection{background:var(--accent);color:var(--lightest);}
+
+::-webkit-scrollbar-track{background:var(--accent);}
+::-webkit-scrollbar{width:6px;background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--accent2);}
+
+*, *:before, *:after{box-sizing:border-box;-webkit-transition:all 0.5s ease-in-out;-moz-transition:all 0.5s ease-in-out;-ms-transition:all 0.5s ease-in-out;-o-transition:all 0.5s ease-in-out;transition:all 0.5s ease-in-out;}
+
+body{margin:0;padding:0;background:var(--page-bg);font-family:var(--headings);font-size:var(--body-text);color:var(--text);}
+
+blockquote{font-style:normal;padding:15px;border-left:3px solid var(--accent);background:var(--blockquote-bg);}
+h1,h2,h3,h4,h5,h6{font-family:var(--headings);margin:0;font-weight:normal;text-transform:var(--headings-style);color:var(--accent2);}
+img{max-width:100%;}
+ul{list-style:square;}
+hr{height:1px;border:none;background:var(--borders);}
+summary{cursor:pointer;}
+summary:focus{outline:none;}
+
+a, a:visited, a:active{color:var(--accent2);text-decoration:none;}
+a:hover{color:var(--accent);text-decoration:none;}
+
+.ljuser{font-weight:bold;}
+.ljuser a[href*="profile"] img{display:none;}
+.ljuser a[href*="profile"]:before{content:'@';}
+.ljuser a[href*="asylum"][href*="profile"]:before{content:'#';}
+
+
+/* WHOLE PAGE CONTAINERS */
+
+#container{background:transparent;padding:var(--margin);}
+#container-inner{max-width:var(--content-width);margin:0 auto;}
+
+.layout-two-column-left #alpha{margin:0;}
+.layout-two-column-left #beta{float:none;width:auto;}
+
+
+/* MAIN COLUMN */
+
+#alpha{background:transparent;border:none;padding:0;}
+#alpha a, #alpha a:visited{color:var(--accent);}
+#alpha a:hover{color:var(--accent2);}
+
+.content-nav{margin:var(--margin) 0 0 0;text-transform:uppercase;}
+.nav-bottom, .entrypage{text-align:center;}
+
+#column-footer{clear:both;}
+
+
+/* ENTRIES */
+
+.entry{margin:0 0 var(--margin) 0;padding:var(--padding);background:var(--content-bg);border:1px solid var(--borders);position:relative;}
+
+.entry-header{background:transparent;border:none;padding:0;}
+.entry-header h3{margin:0;padding:0;font-size:var(--entry-titles);}
+#alpha .entry-header a, #alpha .entry-header a:visited{color:var(--accent2);}
+
+.entry-datetime{position:absolute;top:var(--padding);right:var(--padding);font-size:var(--entry-info);color:var(--date-tags);text-transform:uppercase;}
+
+.inner-entry-userpic{text-align:left;padding:0;}
+.inner-entry-userpic img{position:absolute;top:0;right:calc((var(--entry-icon) + 10px) * -1);width:var(--entry-icon);height:var(--entry-icon);background:var(--accent);border-radius:var(--icons-radius);padding:5px;}
+
+.pic-poster{position:absolute;bottom:var(--padding);left:var(--padding);display:flex;font-family:var(--headings);font-size:var(--entry-info);text-transform:uppercase;line-height:1;}
+.pic-poster b{font-weight:normal;}
+.pic-poster .ljuser ~ .ljuser:before{content:'/';margin:0 4px;}
+
+.entry-content{margin-top:10px;}
+.entry-text{min-height:0;overflow:hidden;font-family:var(--main-font);line-height:1.6;text-align:justify;}
+
+.ljtags{margin:10px 0 0 0;font-family:var(--headings);font-size:var(--entry-info);text-transform:uppercase;}
+#alpha .ljtags a, #alpha .ljtags a:visited{color:var(--date-tags);}
+
+.entry-linkbar{margin:0;font-size:var(--entry-info);text-align:right;text-transform:uppercase;}
+.entry-linkbar ul{list-style:none;padding:0;margin:0;}
+.entry-linkbar li{display:inline;border:none;padding:0;margin:0;}
+.entry-linkbar li a{display:inline-block;margin:10px 0 0 5px;}
+
+
+/* ARCHIVE VIEW */
+
+.yearlinks{text-align:center;margin-bottom:10px;}
+.year{list-style:none;margin:0;padding:0;}
+.year li{display:inline;padding:0;}
+
+.lj-view-archive .entry-content{margin:0;}
+.yeartable{border-collapse:separate;border:none;width:100%;}
+td.monthlable, td.viewmonth{letter-spacing:2px;text-transform:uppercase;background:transparent!important;}
+td.monthlable{text-align:left;}
+td.viewmonth{text-align:right;}
+.dayname{letter-spacing:2px;text-transform:uppercase;text-align:center;background:var(--accent)!important;color:var(--lightest);}
+.yeartable td{border:none!important;background:rgba(0,0,0,0.05);padding:5px;}
+
+
+/* TAGS & MONTH VIEW */
+
+.lj-view-tags #alpha, .lj-view-month #alpha{padding:var(--padding);background:var(--content-bg);border:1px solid var(--borders);}
+
+
+/* SIDEBAR */
+
+#beta{margin:0 0 var(--margin) 0;}
+#beta-inner{font-size:var(--links-list);color:var(--accent2);text-align:center;text-transform:uppercase;}
+
+.module{display:none;padding:0;background:transparent;margin:0;border:none;}
+
+.module-customtext{display:block;}
+.module-customtext .module-content{padding:0;display:flex;}
+
+#beta .title, #beta .header{display:flex;}
+#beta .header{width:100%;align-items:flex-start;justify-content:space-between;}
+#beta .header img{padding:5px;background:var(--accent);border-radius:var(--icons-radius);width:var(--header-icon);height:var(--header-icon);margin:0 10px 0 0;}
+#beta .title{align-items:center;font-family:var(--title-font);font-size:var(--title-text);text-transform:var(--title-style);}
+
+#beta .nav{font-family:Material Icons;text-transform:none;font-size:var(--nav-icons);}
+#beta .nav a{margin:0 0 0 5px;background:var(--accent2);color:var(--lightest);padding:6px;border-radius:var(--nav-link-radius);display:inline-block;}
+#beta .nav a:hover{background:var(--accent);}
+
+.module-typelist{display:block;margin:calc((var(--header-icon) / 4.5) * -1) 0 0 0;}
+.module-typelist ul{list-style:none;margin:0;padding:0;display:flex;justify-content:flex-end;align-items:center;}
+.module-typelist li{display:flex;align-items:center;}
+.module-typelist li:before{content:'';width:12px;height:1px;background:var(--accent);margin:0 2px;}
+.module-typelist li:first-of-type:before{display:none;}
+
+.module-layoutcredit{display:block;position:fixed;bottom:12px;right:10px;font-size:8px;}
+.module-layoutcredit p{padding:0;margin:0;}
+.module-layoutcredit a{padding:3px 10px;background:var(--content-bg);border:1px solid var(--borders);}
+
+
+/* CONTENT FOOTER */
+
+#content-footer{clear:both;height:0;}
+
+
+/* ICON REPLACEMENTS */
+
+img[src*="img/icon_private.gif"], img[src*="img/icon_protected.gif"], img[src*="img/icon_groups.gif"]{width:0!important;height:0!important;padding:16px 0 0 18px!important;}
+
+img[src*="img/icon_private.gif"]{background:transparent var(--private);}
+img[src*="img/icon_protected.gif"]{background:transparent var(--locked);}
+img[src*="img/icon_groups.gif"]{background:transparent var(--customs);}
+
+
+/* DISABLED */
+
+#header, .nav-top, #tagpage-header, .date-header, #sticky-note, .lj-view-day .entry-datetime, .outer-entry-userpic, .mid-entry-userpic, .pic-poster img, .pic-poster a[href*="profile"], .entry-metadata, .entry-linkbar li a[href*=memadd], .entry-linkbar li a[href*=tellafriend], .entry-linkbar li a[href*=subscriptions], .entry-linkbar li a[href$=html], .module-header{display:none;}
+
+
+/* FRIENDS ONLY */
+
+.lj-view-recent .friends-only{position:fixed;top:0;left:0;right:0;bottom:0;overflow:auto;z-index:2;background:var(--page-bg);display:flex;align-items:center;justify-content:center;line-height:0;}
+
+.friends-only .j-nav{position:fixed;top:20px;right:20px;text-align:right;line-height:1;font-family:Material Icons;}
+.friends-only .j-nav a{display:inline-flex;align-items:center;margin:0 0 0 5px;background:var(--accent2);color:var(--lightest)!important;padding:6px 8px;border-radius:var(--nav-link-radius);}
+.friends-only .j-nav a span{font-family:var(--headings);text-transform:uppercase;margin:0 0 0 5px;font-size:var(--splash-nav);}
+.friends-only .j-nav a:hover{background:var(--accent);}
+
+.friends-only header{display:flex;align-items:center;}
+.friends-only header img{padding:5px;background:var(--accent);border-radius:var(--icons-radius);width:var(--header-icon);height:var(--header-icon);margin:0 10px 0 0;}
+.friends-only header h1{font-size:var(--splash-title);color:var(--accent2);font-family:var(--title-font);text-transform:var(--title-style);}
+.friends-only header h1:hover{color:var(--accent);}
+
+.friends-only .links{font-family:var(--headings);text-align:right;display:flex;justify-content:flex-end;align-items:center;text-transform:var(--headings-style);font-size:var(--splash-links);margin:5px 0 0 0;}
+.friends-only .links a:before{content:'';width:15px;height:1px;background:var(--accent);margin:0 2px;}
+.friends-only .links a{display:flex;align-items:center;}
+.friends-only .links a:first-of-type:before{display:none;}
+
+
+/* DIRECTORY CONTAINER */
+
+.lj-view-recent .characters{background:linear-gradient(to right,var(--sidebar-bg) var(--side-width),var(--page-bg) var(--side-width));position:fixed;top:0;left:4px;right:0;bottom:0;overflow:auto;z-index:3;}
+.lj-view-day .characters form{display:none;}
+.lj-view-day .characters:after{content:"Don't worry, your directory is still here! Click your entry title to access your 'edit entry' button.";display:block;text-align:center;padding:40px;font-family:var(--headings);text-transform:var(--headings-style);font-size:var(--entry-titles);color:var(--accent);}
+.character form{position:relative;}
+
+
+/* DIRECTORY HEADER */
+
+.characters header{float:left;clear:both;position:sticky;top:0;height:var(--header-height);width:var(--side-width);display:flex;align-items:center;justify-content:center;flex-direction:column;background:var(--sidebar-bg);border-bottom:1px solid var(--borders);text-align:center;font-family:var(--title-font);font-size:var(--filter-header);line-height:1;}
+.characters header img{padding:5px;background:var(--accent);border-radius:var(--icons-radius);width:var(--filter-icon);height:var(--filter-icon);margin:0 0 10px 0;}
+.characters header .title{text-transform:var(--title-style);margin:0 0 10px 0;font-size:var(--filter-header);}
+
+.characters header .nav{font-family:Material Icons;text-transform:none;font-size:var(--nav-icons);}
+.characters header .nav a{margin:0 3px;border:1px solid var(--borders);color:var(--darkest)!important;padding:6px;border-radius:var(--nav-link-radius);}
+.characters header .nav a:hover{background:var(--accent);color:var(--lightest)!important;}
+
+
+/* CHARACTERS */
+
+.characters main{min-height:100vh;display:flex;justify-content:center;align-items:flex-start;border-left:1px solid var(--borders);padding:var(--characters-inset);color:var(--char-sub);text-transform:uppercase;text-align:center;font-size:var(--character-text);}
+.characters main .main-inner{display:flex;justify-content:flex-start;align-items:flex-start;flex-wrap:wrap;}
+
+.char{width:var(--character-width);height:var(--character-height);border:10px solid var(--char-border);margin:1vw;background-size:cover!important;box-shadow:0 0 0 1px var(--borders);}
+.char[style*='(CHAR_IMG)']{background:rgba(255,255,255,0.2)!important;}
+
+.char-inner{display:flex;align-items:center;justify-content:center;height:100%;background:rgba(0,0,0,0);padding:15px;}
+
+.char-inner h4{font-size:var(--character-titles);color:var(--char-name);}
+.char-inner div{letter-spacing:1px;margin:-25px 0;}
+.char-inner .ljuser{display:inline-block;min-width:100px;margin:-25px 0 0 0;background:var(--char-link);border-radius:3px;padding:3px 0;border:1px solid var(--accent);}
+
+.char:hover .char-inner{background:var(--char-overlay);}
+.char:hover div{margin:0 0 5px 0;}
+.char:hover .ljuser{margin:2px 0 0 0;}
+.char .char-inner *{opacity:0;filter:blur(5px);}
+.char:hover .char-inner *{opacity:1;filter:blur(0);}
+
+
+/* FILTER STYLE */
+
+.characters strong{display:block;width:var(--side-width);background:var(--sidebar-bg);padding:0 10px;letter-spacing:3px;font-size:var(--filter-titles);font-family:var(--headings);color:var(--accent);text-align:center;}
+.characters strong:first-of-type{margin:0;}
+
+.characters strong, .characters input{float:left;clear:both;height:var(--filter-height);line-height:var(--filter-height);border-bottom:1px solid var(--borders);text-transform:uppercase;}
+
+.characters input{-moz-appearance:none;appearance:none;width:var(--side-width);display:flex;cursor:pointer;margin:0;font-family:var(--main-font);color:var(--text);letter-spacing:2px;font-size:var(--filter-text);}
+.characters input:after{width:var(--side-width);background:var(--sidebar-bg);padding:0 10px;border-bottom:1px solid var(--borders);}
+.characters input:hover:after{padding:0 10px 0 25px;color:var(--accent);}
+.characters input:checked:after{background:var(--accent2);color:var(--lightest);}
+
+
+/* FILTER TITLES */
+
+.all:after{content:'All';}
+
+.t-canon:after{content:'Canon';}
+.t-original:after{content:'Original';}
+
+.t-fem:after{content:'Female';}
+.t-male:after{content:'Male';}
+
+.characters input[name*='fav'][class*='t']{text-transform:none;letter-spacing:0;font-family:Material Icons;font-size:13px;font-weight:normal;}
+.t-1:after{content:'star star_outline star_outline star_outline star_outline';}
+.t-2:after{content:'star star star_outline star_outline star_outline';}
+.t-3:after{content:'star star star star_outline star_outline';}
+.t-4:after{content:'star star star star star_outline';}
+.t-5:after{content:'star star star star star';}
+
+.t-teen:after{content:'Teens';}
+.t-20s:after{content:'20s';}
+.t-30s:after{content:'30s';}
+.t-40s:after{content:'40s';}
+.t-imm:after{content:'Immortal';}
+
+.t-avg:after{content:'Average Joe';}
+.t-anti:after{content:'Antihero';}
+.t-care:after{content:'Caregiver';}
+.t-create:after{content:'Creative';}
+.t-hero:after{content:'Hero';}
+.t-vill:after{content:'Villain';}
+
+.t-fantasy:after{content:'Fantasy';}
+.t-horror:after{content:'Horror';}
+.t-mod:after{content:'Modern';}
+.t-period:after{content:'Period';}
+.t-scifi:after{content:'Sci-Fi';}
+.t-super:after{content:'Superhero';}
+.t-spn:after{content:'Supernatural';}
+
+
+/* FILTER - SOURCE */
+
+.t-canon:checked ~ main .original,
+.t-original:checked ~ main .canon
+{display:none;}
+
+
+/* FILTER - GENDER */
+
+.t-male:checked ~ main .fem,
+.t-fem:checked ~ main .male
+{display:none;}
+
+
+/* FILTER - USAGE */
+
+.t-1:checked ~ main .two,
+.t-1:checked ~ main .three,
+.t-1:checked ~ main .four,
+.t-1:checked ~ main .five,
+
+.t-2:checked ~ main .one,
+.t-2:checked ~ main .three,
+.t-2:checked ~ main .four,
+.t-2:checked ~ main .five,
+
+.t-3:checked ~ main .one,
+.t-3:checked ~ main .two,
+.t-3:checked ~ main .four,
+.t-3:checked ~ main .five,
+
+.t-4:checked ~ main .one,
+.t-4:checked ~ main .two,
+.t-4:checked ~ main .three,
+.t-4:checked ~ main .five,
+
+.t-5:checked ~ main .one,
+.t-5:checked ~ main .two,
+.t-5:checked ~ main .three,
+.t-5:checked ~ main .four
+{display:none;}
+
+
+/* FILTER - AGE */
+
+.t-teen:checked ~ main .twenties,
+.t-teen:checked ~ main .thirties,
+.t-teen:checked ~ main .forties,
+.t-teen:checked ~ main .immortal,
+
+.t-20s:checked ~ main .teen,
+.t-20s:checked ~ main .thirties,
+.t-20s:checked ~ main .forties,
+.t-20s:checked ~ main .immortal,
+
+.t-30s:checked ~ main .teen,
+.t-30s:checked ~ main .twenties,
+.t-30s:checked ~ main .forties,
+.t-30s:checked ~ main .immortal,
+
+.t-40s:checked ~ main .teen,
+.t-40s:checked ~ main .twenties,
+.t-40s:checked ~ main .thirties,
+.t-40s:checked ~ main .immortal,
+
+.t-imm:checked ~ main .teen,
+.t-imm:checked ~ main .twenties,
+.t-imm:checked ~ main .thirties,
+.t-imm:checked ~ main .forties
+{display:none;}
+
+
+/* FILTER - ARCHETYPE */
+
+.t-anti:checked ~ main .avg,
+.t-anti:checked ~ main .care,
+.t-anti:checked ~ main .create,
+.t-anti:checked ~ main .hero,
+.t-anti:checked ~ main .vill,
+
+.t-avg:checked ~ main .anti,
+.t-avg:checked ~ main .care,
+.t-avg:checked ~ main .create,
+.t-avg:checked ~ main .hero,
+.t-avg:checked ~ main .vill,
+
+.t-care:checked ~ main .anti,
+.t-care:checked ~ main .avg,
+.t-care:checked ~ main .create,
+.t-care:checked ~ main .hero,
+.t-care:checked ~ main .vill,
+
+.t-create:checked ~ main .anti,
+.t-create:checked ~ main .avg,
+.t-create:checked ~ main .care,
+.t-create:checked ~ main .hero,
+.t-create:checked ~ main .vill,
+
+.t-hero:checked ~ main .anti,
+.t-hero:checked ~ main .avg,
+.t-hero:checked ~ main .care,
+.t-hero:checked ~ main .create,
+.t-hero:checked ~ main .vill,
+
+.t-vill:checked ~ main .anti,
+.t-vill:checked ~ main .avg,
+.t-vill:checked ~ main .care,
+.t-vill:checked ~ main .create,
+.t-vill:checked ~ main .hero
+{display:none;}
+
+
+/* FILTER - GENRE */
+
+.t-fantasy:checked ~ main .horror,
+.t-fantasy:checked ~ main .mod,
+.t-fantasy:checked ~ main .period,
+.t-fantasy:checked ~ main .scifi,
+.t-fantasy:checked ~ main .shero,
+.t-fantasy:checked ~ main .spn,
+
+.t-horror:checked ~ main .fantasy,
+.t-horror:checked ~ main .mod,
+.t-horror:checked ~ main .period,
+.t-horror:checked ~ main .scifi,
+.t-horror:checked ~ main .shero,
+.t-horror:checked ~ main .spn,
+
+.t-mod:checked ~ main .fantasy,
+.t-mod:checked ~ main .horror,
+.t-mod:checked ~ main .period,
+.t-mod:checked ~ main .scifi,
+.t-mod:checked ~ main .shero,
+.t-mod:checked ~ main .spn,
+
+.t-period:checked ~ main .fantasy,
+.t-period:checked ~ main .horror,
+.t-period:checked ~ main .mod,
+.t-period:checked ~ main .scifi,
+.t-period:checked ~ main .shero,
+.t-period:checked ~ main .spn,
+
+.t-scifi:checked ~ main .fantasy,
+.t-scifi:checked ~ main .horror,
+.t-scifi:checked ~ main .mod,
+.t-scifi:checked ~ main .period,
+.t-scifi:checked ~ main .shero,
+.t-scifi:checked ~ main .spn,
+
+.t-shero:checked ~ main .fantasy,
+.t-shero:checked ~ main .horror,
+.t-shero:checked ~ main .mod,
+.t-shero:checked ~ main .period,
+.t-shero:checked ~ main .scifi,
+.t-shero:checked ~ main .spn,
+
+.t-spn:checked ~ main .fantasy,
+.t-spn:checked ~ main .horror,
+.t-spn:checked ~ main .mod,
+.t-spn:checked ~ main .period,
+.t-spn:checked ~ main .scifi,
+.t-spn:checked ~ main .shero
+{display:none;}
+  </body>
+</html>
